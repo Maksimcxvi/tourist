@@ -1,0 +1,17 @@
+User-Agent: *
+Disallow: /404notfound.html
+Disallow: /error
+Disallow: /a/form*
+Disallow: /a/rec*
+Disallow: /a/click*
+Disallow: /a/scroll*
+Disallow: /a/popup*
+Disallow: /a/cart*
+Disallow: /a/product*
+Disallow: /a/event*
+Disallow: /*_escaped_fragment_*
+Disallow:
+
+
+Sitemap: https://tourist-tours.ru/sitemap.xml
+Host: https://tourist-tours.ru

@@ -1,0 +1,48 @@
+ErrorDocument 403 /page60452527.html
+ErrorDocument 404 /page60452527.html
+
+DirectoryIndex page63325887.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^(.*)$ https://tourist-tours\.ru/$1 [R=301,L]
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =https
+RewriteCond %{HTTP_HOST} ^www\.tourist-tours.ru [NC]
+RewriteRule ^(.*)$ https://tourist-tours\.ru/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^hotels$ page63398621.html [NC]
+RewriteRule ^hotels/$ page63398621.html [NC]
+
+RewriteRule ^aviatickets$ page63400029.html [NC]
+RewriteRule ^aviatickets/$ page63400029.html [NC]
+
+RewriteRule ^error$ page60452527.html [NC]
+RewriteRule ^error/$ page60452527.html [NC]
+
+RewriteRule ^spb$ page60181863.html [NC]
+RewriteRule ^spb/$ page60181863.html [NC]
+
+RewriteRule ^msk$ page60182855.html [NC]
+RewriteRule ^msk/$ page60182855.html [NC]
+
+RewriteRule ^kazan$ page60184389.html [NC]
+RewriteRule ^kazan/$ page60184389.html [NC]
+
+RewriteRule ^about$ page63493405.html [NC]
+RewriteRule ^about/$ page63493405.html [NC]
+
+RewriteRule ^qa$ page63495495.html [NC]
+RewriteRule ^qa/$ page63495495.html [NC]
+
+RewriteRule ^help$ page63495769.html [NC]
+RewriteRule ^help/$ page63495769.html [NC]
+
+RewriteRule ^contacts$ page63496033.html [NC]
+RewriteRule ^contacts/$ page63496033.html [NC]
+
+
